@@ -1,0 +1,32 @@
+﻿body {
+    font-family: 'AU Passata', Calibri, Arial;
+    margin:0 auto;
+    max-width:500px;
+    background-color: #691805;
+    color:white;
+    text-align: center;
+}
+h2{
+    font-weight:normal;
+    text-transform:uppercase;
+}
+h3{
+    font-weight:normal;
+    margin:3px 0px;
+}
+
+.play{
+    color:white;
+    text-decoration:none;
+    background-color:white;
+    color:#691805;
+    padding: 10px 50px 10px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
