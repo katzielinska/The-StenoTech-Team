@@ -1,18 +1,91 @@
-﻿body {
+﻿.wrapper {height: 1920px;
+    width: 1080px;
+}
+
+.content {
+    
+}
+
+body {
     font-family: 'AU Passata', Calibri, Arial;
     margin:0 auto;
-    max-width:500px;
-    background-color: #691805;
+    background-color:#ffff ;
     color:white;
     text-align: center;
+    margin-left: 4%;
+    margin-right: 0%;
+    
 }
+h1{color: #056947;
+    font-size: 5.5em;
+    padding-top: 5%;
+    text-align: center;
+    margin-right: 5%;
+    
+    
+}
+
+#first {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    
+}
+#headphone1 {
+    max-width: 10%;
+    padding-left: 10%;
+    padding-top: 6%;
+}
+
+hr { background-color:#691805;
+    height: 5px;
+    border: 0;
+}
+
+P { color: #056947;
+    font-size: 2.6em;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.3em;
+}
+
+
 h2{
     font-weight:normal;
-    text-transform:uppercase;
+   
+    color: #056947;
+    font-size: 3em;
+    margin-top: 5%;
+    padding-bottom: 3%;
 }
+
+#tooth {max-width: 500px;
+        padding-right: 30%;
+        padding-left: 30%;
+        margin-bottom: 5%;
+    
+}
+
+#start { max-width: 45%;
+         float: none;
+         margin-top: 5%;
+}
+
+.button {max-width: 200px;
+         
+    
+}
+#icon {display: flex;
+    justify-content:;
+    
+}
+
 h3{
     font-weight:normal;
     margin:3px 0px;
+    color: #056947;
 }
 
 .play{
@@ -30,3 +103,4 @@ h3{
     border-top-left-radius: 10px;
     
 }
+
