@@ -73,19 +73,33 @@ h2{
          margin-top: 5%;
 }
 
-.button {max-width: 200px;
-         
-    
-}
-#icon {display: flex;
-    justify-content:;
-    
-}
 
-h3{
-    font-weight:normal;
+
+
+
+h3 {font-weight:normal;
     margin:3px 0px;
     color: #056947;
+}
+
+#container {position: inherit;}
+
+#text { max-width: 70%;
+        position:absolute;
+        right: 0;
+        margin-right: 5%;
+}
+ 
+
+.button {max-width: 200px;
+         margin-bottom: 18%;
+}
+
+#icons {margin-right: 75%;
+        padding-top: 8%;
+}
+#objects {float: none;
+    
 }
 
 .play{
