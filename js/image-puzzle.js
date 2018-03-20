@@ -1,4 +1,29 @@
-﻿var timerFunction;
+﻿ var images = [
+                { src: 'image/object1.png', title: 'xxxxxxxx' },
+
+            ];
+
+            $(function () {
+                var gridSize = $('#levelPanel :radio:checked').val();
+                imagePuzzle.startGame(images, gridSize);
+                $('#newPhoto').click(function () {
+                    var gridSize = $('#levelPanel :radio:checked').val();  // Take the updated gridSize from UI.
+                    imagePuzzle.startGame(images, gridSize);
+                });
+
+                $('#levelPanel :radio').change(function (e) {
+                    var gridSize = $(this).val();
+                    imagePuzzle.startGame(images, gridSize);
+                });
+            });
+            function rules() {
+                alert('Re arrange the image parts in a way that it correctly forms the picture. \nThe no. of steps taken will be counted.');
+            }
+            function about() {
+                alert('Developed by Anurag Gandhi. \nHe can be contacted at: soft.gandhi@gmail.com');
+            }
+
+var timerFunction;
 
 var imagePuzzle = {
     stepCount: 0,
@@ -57,8 +82,8 @@ var imagePuzzle = {
                 'background-image': 'url(' + image.src + ')',
                 'background-size': (gridSize * 100) + '%',
                 'background-position': xpos + ' ' + ypos,
-                'width': 400 / gridSize,
-                'height': 400 / gridSize
+                'width': 600 / gridSize,
+                'height': 600 / gridSize
             });
             $('#sortable').append(li);
         }
