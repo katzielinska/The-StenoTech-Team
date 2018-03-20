@@ -90,6 +90,9 @@ h3 {font-weight:normal;
         margin-right: 5%;
 }
  
+#hr {margin-left: 4%;
+    
+}
 
 .button {max-width: 200px;
          margin-bottom: 18%;
@@ -99,8 +102,41 @@ h3 {font-weight:normal;
         padding-top: 8%;
 }
 #objects {float: none;
+}
+
+
+#object1{max-width: 600px;
+       margin-left: 25%;
+       position: inherit;
+    margin-top: 3%;
+}
+
+
+
+#middle {display: flex;
+         justify-content: space-between;
+    padding-right: 0%;
+}
+
+
+#puzzle{padding-top: 10%;
     
 }
+
+
+#last {display: flex;
+       justify-content: space-between;
+       padding-left: 9%;
+       padding-right: 9%;
+       margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+#center {
+    
+    
+}
+
 
 .play{
     color:white;
