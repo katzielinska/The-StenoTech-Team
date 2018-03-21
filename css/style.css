@@ -1,48 +1,51 @@
-﻿.wrapper {height: 1920px;
+﻿.wrapper {
+    height: 1920px;
     width: 1080px;
 }
 
-.content {
-    
-}
+.content {}
 
 body {
     font-family: 'AU Passata', Calibri, Arial;
-    margin:0 auto;
-    background-color:#ffff ;
-    color:white;
+    margin: 0 auto;
+    background-color: #ffff;
+    color: white;
     text-align: center;
-    margin-left: 4%;
-    margin-right: 0%;
-    
+    width: 1080px;
+
 }
-h1{color: #056947;
+
+h1 {
+    color: #056947;
     font-size: 5.5em;
     padding-top: 5%;
     text-align: center;
     margin-right: 5%;
-    
-    
+
+
 }
 
 #first {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3%;
-    
+margin-right: 6%;
 }
+
 #headphone1 {
     max-width: 10%;
-    padding-left: 10%;
     padding-top: 6%;
 }
 
-hr { background-color:#691805;
+hr {
+    background-color: #691805;
     height: 5px;
     border: 0;
+   
 }
 
-P { color: #056947;
+P {
+    color: #056947;
     font-size: 2.6em;
     text-align: left;
     padding-left: 5%;
@@ -51,106 +54,142 @@ P { color: #056947;
     line-height: 1.3em;
 }
 
+#text {margin-right: 5%;
+    
+}
 
-h2{
-    font-weight:normal;
-   
+h2 {
+    font-weight: bold;
+
     color: #056947;
     font-size: 3em;
     margin-top: 5%;
     padding-bottom: 3%;
 }
 
-#tooth {max-width: 500px;
-        padding-right: 30%;
-        padding-left: 30%;
-        margin-bottom: 5%;
-    
-}
-
-#start { max-width: 45%;
-         float: none;
-         margin-top: 5%;
-}
-
-
-
-
-
-h3 {font-weight:normal;
-    margin:3px 0px;
-    color: #056947;
-}
-
-#container {position: inherit;}
-
-#text { max-width: 70%;
-        position:absolute;
-        right: 0;
-        margin-right: 5%;
-}
+#tooth {
+    max-width: 500px;
+    margin-left: 9%;
+    margin-bottom: 5%;
+    margin-right: 11%;
  
-#hr {margin-left: 4%;
+}
+#grid{ display: grid;
+    justify-content: center;
     
 }
 
-.button {max-width: 200px;
-         margin-bottom: 18%;
-}
-
-#icons {margin-right: 75%;
-        padding-top: 8%;
-}
-#objects {float: none;
+#start {
+    max-width: 50%;
+   
+    margin-top: 7%;
+    
 }
 
 
-#object1{max-width: 600px;
-       margin-left: 25%;
-       position: inherit;
+
+#size{max-width: 300px;
+    
+}
+
+
+h3 {
+    font-weight: bold;
+    margin: 3px 0px;
+    color: #056947;
+    margin-top: 1%;
+}
+
+
+
+#text {
+    display: grid;
+    grid-template-areas:
+        'icons icons heading heading' 
+        'icons icons paragraph paragraph';
+}
+
+.item1 {
+    grid-area: heading;
+}
+
+.item2 {
+    grid-area: paragraph;
+}
+
+.item3 {
+    grid-area: icons;
+    align-self: flex-end;
+    margin-top:51px;
+    margin-right: 50px;
+    
+
+}
+#psize { font-size: 1.5em;
+    color: transparent;
+    text-shadow: 0 0 15px rgba(0,0,0,0.5);
+    
+}
+
+a:link {
+    text-decoration: none;
+    
+}
+
+
+#hr {
+    margin-left: 4%;
+
+}
+
+#icons img {
+    width: 100%;
+    padding: 0 25px 20px 0;
+}
+
+.button {
+    max-width: 200px;
+    margin-bottom: 18%;
+}
+
+
+#objects {
+    float: none;
+   
+   
+}
+
+
+#object1 {
+    
+    margin-top: 5%;
+}
+
+
+
+#middle {
+    display: flex;
+    justify-content: space-between;
     margin-top: 3%;
 }
 
 
+#puzzle {
+    margin-top: 10%;
+    max-width: 300px;
+    max-height: 300px;
 
-#middle {display: flex;
-         justify-content: space-between;
-    padding-right: 0%;
 }
 
 
-#puzzle{padding-top: 10%;
-    
-}
-
-
-#last {display: flex;
-       justify-content: space-between;
-       padding-left: 9%;
-       padding-right: 9%;
-       margin-top: 1%;
+#last {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 3%;
     margin-bottom: 3%;
 }
 
-#center {
-    
-    
-}
-
-
-.play{
-    color:white;
-    text-decoration:none;
-    background-color:white;
-    color:#691805;
-    padding: 10px 50px 10px 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size:2em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    
-}
+#center {}
 

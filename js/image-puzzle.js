@@ -1,4 +1,29 @@
-﻿var timerFunction;
+﻿var images = [
+                { src: 'image/Closetsss.png', title: 'xxxxxxxx' },
+
+            ];
+
+            $(function () {
+                var gridSize = $('#levelPanel :radio:checked').val();
+                imagePuzzle.startGame(images, gridSize);
+                $('#newPhoto').click(function () {
+                    var gridSize = $('#levelPanel :radio:checked').val();  // Take the updated gridSize from UI.
+                    imagePuzzle.startGame(images, gridSize);
+                });
+
+                $('#levelPanel :radio').change(function (e) {
+                    var gridSize = $(this).val();
+                    imagePuzzle.startGame(images, gridSize);
+                });
+            });
+            function rules() {
+                alert('Re arrange the image parts in a way that it correctly forms the picture. \nThe no. of steps taken will be counted.');
+            }
+            function about() {
+                alert('Developed by Anurag Gandhi. \nHe can be contacted at: soft.gandhi@gmail.com');
+            }
+
+var timerFunction;
 
 var imagePuzzle = {
     stepCount: 0,
@@ -57,8 +82,8 @@ var imagePuzzle = {
                 'background-image': 'url(' + image.src + ')',
                 'background-size': (gridSize * 100) + '%',
                 'background-position': xpos + ' ' + ypos,
-                'width': 400 / gridSize,
-                'height': 400 / gridSize
+                'width': 1000 / gridSize,
+                'height': 1000 / gridSize
             });
             $('#sortable').append(li);
         }
@@ -84,3 +109,25 @@ $.fn.randomize = function (selector) {
     });
     return this;
 };
+
+
+
+function changeImage(){
+       var audio = document.getElementById("audio");
+       audio.play();
+    
+        var image = document.getElementById("imgClickAndChange");
+if ( image == "headphone.png" ) {
+    document.images["imgClickAndChange"].src = "image/headphone.png";
+    image  = "pause.png";
+  }
+  else {
+    document.images["imgClickAndChange"].src = "image/pause.png";
+    image  = "headphone.png";
+  }
+}
+
+
+
+function play(){
+                 }
