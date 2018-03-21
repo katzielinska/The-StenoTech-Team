@@ -10,52 +10,61 @@
     <script src="js/image-puzzle.js"></script>
 </head>
 <body>
+    <div>
     <!-- the page heading -->
-		<section >
-            <div id="container">
+		 <section>
         <div id="text">
            <!-- the page heading -->
-		<h2> This is heading</h2>
+		<div class="item1"><h2> Revolutionary Brush</h2> </div>
         
         <hr id="hr">
            
            <!-- start of pragraph -->
-        <p>Back in the day doctors weren’t just doctors, they were dentists too, but only few had their own room and tools for it. <br> <br>Back then the fear of dentists were even greater than today - and for good reason. Tools were rough and there was a lot of pain involved, also the danger of infection was huge compared to today.</p>
-        </div>
-            </div>
+    
+       <div class="item2"> <p id="psize">We have some old toothbrushes here. We like to say that this is one of the most..well, I would say it’s the most important invention from this room,because of the toothbrush, the mouth-as part of our body- it is the one that changed the most during the last hundred year. In Denmark, in a few generations, it has gone from you got all your teeth taken out when you got 14 years old…and in 2 generations, nobody gets that, you can live and have all your teeth intact. So in a very short time, we have totally changed the way our mouth functions and looks; because some of the object over here are fake teeth of course, you could use them to chew if you didn’t have your own teeth.<br>
+       -in here we have some stories about how was it going to the dentist; also some funny stories about the toothbrush, like in the start, many families couldn’t afford having a toothbrush for everybody in the family, so we had “a family toothbrush” and that was not that</p></div>
+    
+            
             <!-- icons buttons-->
             
-       <div id="icons">
+       <div class="item3" id="icons">
             <a href="room.html">
             <img class="button"
-                 src="image/Back%20Button%20.svg"
+                 src="image/back%20button.png"
                  alt="back button">
             </a>
            <br>
            <a href="index.html">
             <img class="button"
-                 src="image/Home%20Button.svg"
+                 src="image/home%20button.png"
                  alt="home button">
             </a>
            <br>
-            <img class="button"
-                 src="image/Headphone%20Button%20.svg"
-                 alt="headphone button">
+            <img value="PLAY" 
+                 onclick="changeImage();" 
+                 class="button" id="imgClickAndChange"
+                 src="image/headphone.png">
+           <audio id="audio" src="ST.mp3"></audio>
            
+           
+        
+            </div>
             </div>
         </section>
         <hr>
               
-    
-    
-    <article onload="init();">
-        <canvas id="canvas">
+     <div id="collage">
+        
+        
+        <div id="playPanel" style="padding:5px;display:none;">
             
-        </canvas>
+            <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
+                <ul id="sortable" class="sortable"></ul>
+    
+   
     
     
-    
-    </article>
+
     
     
     
@@ -84,45 +93,10 @@
                 
             </div>
         </div>
-        <div id="gameOver" style="display:none;">
-            <div style="padding: 5px 10px 20px 10px; text-align: center; ">
-                <h2 style="text-align:center">Congratulations!</h2>
-                 You have completed the puzzle.
-                <!--Steps: <span class="stepCount">0</span> steps.
-                <br />
-                Time Taken: <span class="timeCount">0</span> seconds<br />
-                <div> 
-                    <button type="button" onclick="window.location.reload(true);">Play Again</button> 
-                </div>--> 
-            </div>
+       
         </div>
 
-        <script>
-            var images = [
-                { src: 'images/london-bridge.jpg', title: 'xxxxxxxx' },
-
-            ];
-
-            $(function () {
-                var gridSize = $('#levelPanel :radio:checked').val();
-                imagePuzzle.startGame(images, gridSize);
-                $('#newPhoto').click(function () {
-                    var gridSize = $('#levelPanel :radio:checked').val();  // Take the updated gridSize from UI.
-                    imagePuzzle.startGame(images, gridSize);
-                });
-
-                $('#levelPanel :radio').change(function (e) {
-                    var gridSize = $(this).val();
-                    imagePuzzle.startGame(images, gridSize);
-                });
-            });
-            function rules() {
-                alert('Re arrange the image parts in a way that it correctly forms the picture. \nThe no. of steps taken will be counted.');
-            }
-            function about() {
-                alert('Developed by Anurag Gandhi. \nHe can be contacted at: soft.gandhi@gmail.com');
-            }
-        </script>
     </div>
+
 </body>
 </html>
