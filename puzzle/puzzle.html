@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Puzzle</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/image-puzzle.css" rel="stylesheet" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/image-puzzle.js"></script>
+</head>
+<body>
+    <div>
+    <!-- the page heading -->
+		 <section>
+        <div id="text">
+           <!-- the page heading -->
+		<div class="item1"><h2> Revolutionary Brush</h2> </div>
+        
+        <hr id="hr">
+           
+           <!-- start of pragraph -->
+    
+       <div class="item2"> <p id="psize">We have some old toothbrushes here. We like to say that this is one of the most..well, I would say it’s the most important invention from this room,because of the toothbrush, the mouth-as part of our body- it is the one that changed the most during the last hundred year. In Denmark, in a few generations, it has gone from you got all your teeth taken out when you got 14 years old…and in 2 generations, nobody gets that, you can live and have all your teeth intact. So in a very short time, we have totally changed the way our mouth functions and looks; because some of the object over here are fake teeth of course, you could use them to chew if you didn’t have your own teeth.<br>
+       -in here we have some stories about how was it going to the dentist; also some funny stories about the toothbrush, like in the start, many families couldn’t afford having a toothbrush for everybody in the family, so we had “a family toothbrush” and that was not that</p></div>
+    
+            
+            <!-- icons buttons-->
+            
+       <div class="item3" id="icons">
+            <a href="room.html">
+            <img class="button"
+                 src="image/back%20button.png"
+                 alt="back button">
+            </a>
+           <br>
+           <a href="index.html">
+            <img class="button"
+                 src="image/home%20button.png"
+                 alt="home button">
+            </a>
+           <br>
+            <img value="PLAY" 
+                 onclick="changeImage();" 
+                 class="button" id="imgClickAndChange"
+                 src="image/headphone.png">
+           <audio id="audio" src="ST.mp3"></audio>
+           
+           
+        
+            </div>
+            </div>
+        </section>
+        <hr>
+              
+     <div id="collage">
+        
+        
+        <div id="playPanel" style="padding:5px;display:none;">
+            
+            <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
+                <ul id="sortable" class="sortable"></ul>
+    
+   
+    
+    
+
+    
+    
+    
+    
+    
+    <!-- <ul id="sortable" class="sortable"></ul> -->
+                
+                    <!--<div id="stepBox">
+                        <div>Steps:</div><div class="stepCount">0</div>
+                    </div>
+                    <div id="timeBox">
+                        Time Taken: <span id="timerPanel"></span> secs
+                    </div>-->
+                 <!--   <img id="actualImage" />-->
+                    
+                 <!--   <p id="levelPanel">
+                        <input type="radio" name="level" id="easy" checked="checked" value="3" /> <label for="easy">Easy</label>
+                        <input type="radio" name="level" id="medium" value="4" /> <label for="medium">Medium</label>
+                        <input type="radio" name="level" id="hard" value="5" /> <label for="hard">Hard</label> 
+                    </p> -->
+                   <!-- <div>
+                        <button id="btnRule" type="button" class="btn" onclick="rules();">Rules</button>
+                        <button id="newPhoto" type="button" class="btn">Another Photo</button>
+                        <button id="btnReplay" type="button" class="btn" onclick="about();">About</button>
+                    </div> -->
+                
+            </div>
+        </div>
+       
+        </div>
+
+    </div>
+
+</body>
+</html>

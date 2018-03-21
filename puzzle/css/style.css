@@ -1,0 +1,195 @@
+﻿.wrapper {
+    height: 1920px;
+    width: 1080px;
+}
+
+.content {}
+
+body {
+    font-family: 'AU Passata', Calibri, Arial;
+    margin: 0 auto;
+    background-color: #ffff;
+    color: white;
+    text-align: center;
+    width: 1080px;
+
+}
+
+h1 {
+    color: #056947;
+    font-size: 5.5em;
+    padding-top: 5%;
+    text-align: center;
+    margin-right: 5%;
+
+
+}
+
+#first {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+margin-right: 6%;
+}
+
+#headphone1 {
+    max-width: 10%;
+    padding-top: 6%;
+}
+
+hr {
+    background-color: #691805;
+    height: 5px;
+    border: 0;
+   
+}
+
+P {
+    color: #056947;
+    font-size: 2.6em;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.3em;
+}
+
+#text {margin-right: 5%;
+    
+}
+
+h2 {
+    font-weight: bold;
+
+    color: #056947;
+    font-size: 3em;
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+
+#tooth {
+    max-width: 500px;
+   
+    margin-bottom: 5%;
+   
+ 
+}
+#grid{ display: grid;
+    justify-content: center;
+    
+}
+
+#start {
+    max-width: 50%;
+   
+    margin-top: 7%;
+    
+}
+
+
+
+#size{max-width: 300px;
+    
+}
+
+
+h3 {
+    font-weight: bold;
+    margin: 3px 0px;
+    color: #056947;
+    margin-top: 1%;
+}
+
+
+
+#text {
+    display: grid;
+    grid-template-areas:
+        'icons icons heading heading' 
+        'icons icons paragraph paragraph';
+}
+
+.item1 {
+    grid-area: heading;
+}
+
+.item2 {
+    grid-area: paragraph;
+}
+
+.item3 {
+    grid-area: icons;
+    align-self: flex-end;
+    margin-top:51px;
+    margin-right: 50px;
+    
+
+}
+#psize { font-size: 1.5em;
+    color: transparent;
+    text-shadow: 0 0 15px rgba(0,0,0,0.5);
+    
+}
+
+a:link {
+    text-decoration: none;
+    
+}
+
+
+#hr {
+    margin-left: 4%;
+
+}
+
+#icons img {
+    width: 100%;
+    padding: 0 25px 20px 0;
+}
+
+.button {
+    max-width: 200px;
+    margin-bottom: 18%;
+}
+
+
+#objects {
+    float: none;
+   
+   
+}
+
+
+#object1 {
+    
+    margin-top: 5%;
+}
+
+
+
+#middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+
+#puzzle {
+    margin-top: 10%;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+
+#last {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#center {}
+
